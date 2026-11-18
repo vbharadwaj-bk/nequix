@@ -173,7 +173,6 @@ class NequixConvolution(eqx.Module):
 
             try:
                 import openequivariance as oeq
-                import openequivariance.jax  # noqa: F401
             except ImportError:
                 raise ImportError(
                     "OpenEquivariance >= 0.8.2 is required for kernel=True:\n"
